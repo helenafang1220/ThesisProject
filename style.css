@@ -1,0 +1,70 @@
+@font-face {
+    font-family:'pt_monoregular';
+    src: url('webfontkit/ptmono-regular-webfont.woff2') format('woff2'),
+         url('webfontkit/ptmono-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    text-color: white;
+}
+
+body {
+  font-family:'pt_monoregular';
+  background-color: #5800FF;
+  color: white;
+  font-size: 300%;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.button {
+  background-color: #E900FF;
+  font-family:'pt_monoregular';
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 150%;
+  margin: 4px 2px;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px 2px rgb(166, 2, 181);
+}
+
+.button:hover {
+      background-color:#d702eb;
+      transition: 0.1s;
+  }
+
+h1 {
+  font-size: 200%;
+  webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+}
+
+div {
+  line-height:50px;
+}
+
+.module {
+  margin:20px auto;
+  padding:30px;
+  div {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    border:1px solid #ba0000;
+  }
+}
+
+
+/* multiple columns */
+.multicol {
+  overflow:hidden;
+  width:$module_width;
+  & > div {
+    height:$box_height;
+    width:100px;
+    float:left;
+  }
+}
